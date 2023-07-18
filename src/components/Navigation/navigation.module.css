@@ -1,0 +1,38 @@
+.navLinkBox {
+    display: flex;
+    gap: 30px;
+}
+
+.navLinkSt {
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    text-decoration: none;
+    font-family: 'Kalam', cursive;
+
+} 
+.navLinkSt:focus {
+    color:rgb(87, 93, 93);
+  
+}
+.navLinkSt:hover {
+    color:rgb(162, 162, 183);
+   
+}
+
+.navLinkStAuthNav {
+    color: rgb(110, 201, 109);
+    font-size: 40px;
+    font-weight: 700;
+    text-decoration: none;
+    font-family: 'Kalam', cursive;
+}
+.navLinkStAuthNav:focus {
+    color:rgb(165, 223, 204);
+   
+}
+.navLinkStAuthNav:hover {
+    color: rgb(76, 101, 92);
+   
+}
+
