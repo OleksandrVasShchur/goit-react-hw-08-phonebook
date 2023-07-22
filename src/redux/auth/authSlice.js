@@ -39,21 +39,20 @@ const authSlice = createSlice({
         state.isAuthError = true;
       })
 
-      .addCase(logIn.fulfilled, (state, action) =>  {
+      .addCase(logIn.fulfilled, (state, action) => {
         state.user = action.payload.user;
         state.token = action.payload.token;
         state.isLoading = true;
         state.isAuthError = false;
       })
-      .addCase(logIn.rejected, (state, action) =>  {
+      .addCase(logIn.rejected, (state) => {
         state.isAuthError = true;
       })
 
-      .addCase(logOut.fulfilled, state =>  {
+      .addCase(logOut.fulfilled, state => {
         state.user = { name: null, email: null };
         state.token = null;
         state.isLoading = false;
-        
       })
 
       .addCase(refreshUser.pending, state => {

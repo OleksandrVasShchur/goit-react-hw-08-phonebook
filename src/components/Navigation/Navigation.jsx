@@ -5,7 +5,6 @@ export const Navigation = () => {
   return (
     <div className={css.navLinkBox}>
       <NavLink className={css.navLinkSt} to="/">Home</NavLink>
-      <NavLink className={css.navLinkSt}  to="/contacts">Contacts</NavLink>
     </div>
   );
 };

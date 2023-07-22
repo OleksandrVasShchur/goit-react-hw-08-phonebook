@@ -3,7 +3,7 @@ import { logIn } from "redux/auth/authOperations";
 import css from '../components/Style/form.module.css';
 
 const LoginPage = () => {
-const dispatch = useDispatch;
+const dispatch = useDispatch();
 
 const handleSubmit = e => {
 e.preventDefault();
